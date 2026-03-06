@@ -1,0 +1,236 @@
+# Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+.env.test
+.env.staging
+.env.backup
+.envrc
+.secrets
+
+# Credential Files
+*.pem
+*.key
+*.p8
+*.p12
+*.pfx
+*.cer
+*.crt
+*.ssl
+*.jks
+secrets.json
+credentials.json
+config.local.json
+
+# API Keys & Tokens
+.api_key
+.api_keys
+.token
+.tokens
+.access_token
+oauth_token
+private_key
+public_key
+
+# Database Files
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.npm
+.eslintcache
+dist/
+build/
+.next/
+out/
+.nuxt/
+.cache/
+.vuepress/dist/
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+venv/
+ENV/
+env/
+.venv
+pipenv.lock
+poetry.lock
+
+# Java
+*.class
+*.jar
+*.log
+*.ctxt
+.mtj.tmp/
+*.classpath
+.gradle
+target/
+.gradle/
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Ruby
+Gemfile.lock
+.bundle/
+vendor/bundle/
+
+# Go
+go.sum
+dist/
+bin/
+
+# Rust
+target/
+Cargo.lock
+
+# C/C++
+*.o
+*.a
+*.out
+*.exe
+*.dylib
+cmake-build-debug/
+cmake-build-release/
+
+# IDE & Editor Configuration
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.sublime-project
+.vim/
+.emacs.d/
+.netrwhist
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Build Artifacts
+dist/
+build/
+*.min.js
+*.min.css
+.cache/
+
+# Temporary Files
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+.#*
+
+# Docker
+.dockerignore
+
+# AWS
+.aws/
+aws_credentials.json
+*.pem
+
+# Azure
+.azure/
+.azurerc
+
+# GCP
+google-cloud-key.json
+.gcp/
+
+# Local Development
+.local/
+.vagrant/
+Vagrantfile.local
+
+# Cloud Storage
+.s3cfg
+
+# Test Coverage
+coverage/
+.nyc_output/
+htmlcov/
+
+# CI/CD
+.circleci/config.local.yml
+.travis.yml.local
+
+# Package Manager Backups
+.npm
+.yarn
+.pnpm
+
+# Misc
+*.swp
+*.swo
+.redo
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.bundle
