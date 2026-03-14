@@ -1,4 +1,4 @@
-import pyedflib
+import mne
 import numpy as np
 
 
@@ -17,10 +17,8 @@ def load_ecg_signal(file_path):
         ECG signal values
     """
 
-    f = pyedflib.EdfReader(file_path)
-
-    signal = f.readSignal(0)
-
-    f.close()
+    raw = mne.io.read_raw_edf(file_path, preload=True, verbose=False)
+    
+    signal = raw.get_data()[0]
 
     return signal
