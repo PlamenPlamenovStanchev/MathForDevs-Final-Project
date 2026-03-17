@@ -1,4 +1,5 @@
 import numpy as np
+from scipy import signal
 from scipy.signal import find_peaks
 
 
@@ -24,3 +25,14 @@ def detect_r_peaks(signal, distance=150, height=None):
     peaks, _ = find_peaks(signal, distance=distance, height=height)
 
     return peaks
+
+
+def moving_average(signal, window_size=5):
+    
+    """
+    Simple noise filtering using moving average.
+
+    This reduces high-frequency noise in ECG signals.
+    """
+        
+    return np.convolve(signal, np.ones(window_size)/window_size, mode='same')
