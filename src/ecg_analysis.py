@@ -5,11 +5,11 @@ from scipy.signal import find_peaks
 
 def detect_r_peaks(signal, distance=150, height=None):
     """
-    Detect R-peaks in an ECG signal.
+    Detect R peaks in an ECG signal.
 
     Parameters
     ----------
-    signal : numpy array
+    signal : np.array
         ECG signal
     distance : int
         Minimum distance between peaks
@@ -18,7 +18,7 @@ def detect_r_peaks(signal, distance=150, height=None):
 
     Returns
     -------
-    peaks : array
+    peaks : np.array
         Indices of detected peaks
     """
 
@@ -27,12 +27,24 @@ def detect_r_peaks(signal, distance=150, height=None):
     return peaks
 
 
+
+
 def moving_average(signal, window_size=5):
     
     """
-    Simple noise filtering using moving average.
+    Apply simple noise filtering using moving average.
 
-    This reduces high-frequency noise in ECG signals.
+    Parameters
+    ----------
+    signal : np.array
+        ECG signal
+    window_size : int
+        Size of smoothing window
+
+    Returns
+    -------
+    filtered : np.array
+        Smoothed signal
     """
         
     return np.convolve(signal, np.ones(window_size)/window_size, mode='same')
