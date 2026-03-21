@@ -1,10 +1,9 @@
-import mne
-import numpy as np
+import pyedflib
 
 
 def load_ecg_signal(file_path):
     """
-    Loads ECG signal from EDF file.
+    Load ECG signal from EDF file.
 
     Parameters
     ----------
@@ -13,12 +12,11 @@ def load_ecg_signal(file_path):
 
     Returns
     -------
-    signal : numpy array
+    signal : np.array
         ECG signal values
     """
-
-    raw = mne.io.read_raw_edf(file_path, preload=True, verbose=False)
-    
-    signal = raw.get_data()[0]
+    f = pyedflib.EdfReader(file_path)
+    signal = f.readSignal(0)
+    f.close()
 
     return signal
