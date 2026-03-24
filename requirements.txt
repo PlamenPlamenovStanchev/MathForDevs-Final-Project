@@ -3,4 +3,4 @@ pandas
 matplotlib
 scipy
 wfdb
-pyEDFlib; python_version < "3.13"
+mne
