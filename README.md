@@ -26,3 +26,7 @@ This project explores how concepts from calculus can be applied to electrocardio
 
 ```bash
 pip install -r requirements.txt
+
+## Author
+
+Plamen Stanchev
