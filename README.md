@@ -1,33 +1,28 @@
-# Calculus in Medical Data: ECG Signal Analysis
+# Calculus in Medical Data: ECG Analysis
 
 ## Overview
 
-Electrocardiography (ECG) records the electrical activity of the heart over time. 
-ECG signals can be interpreted as one-dimensional functions of time and analyzed using mathematical tools from calculus.
+This project explores how concepts from calculus can be applied to electrocardiogram (ECG) data. The ECG signal is treated as a time-dependent function, allowing mathematical tools such as derivatives and local extrema to be used for analysis.
 
-This project explores how concepts such as:
+## Features
 
-- derivatives
-- local extrema
-- concave and convex functions
+- ECG signal visualization  
+- Derivative-based analysis  
+- R peak detection (local maxima)  
+- RR interval calculation  
+- Heart rate estimation  
+- Noise filtering  
 
-can be used to analyze ECG data.
+## Project Structure
 
-## Goals
+- `src/` – core algorithms and data loading  
+- `data/` – ECG dataset  
+- `images/` – diagrams and figures  
+- `ecg_analysis.ipynb` – main analysis notebook  
 
-The project aims to:
+## How to Run
 
-- Explain the medical background of ECG signals
-- Model ECG data as a mathematical function
-- Apply calculus concepts to analyze ECG signals
-- Implement ECG signal analysis using Python
-- Detect peaks and estimate heart rate
+1. Install dependencies:
 
-## Technologies
-
-- Python
-- NumPy
-- Pandas
-- Matplotlib
-- SciPy
-- Jupyter Notebook
+```bash
+pip install -r requirements.txt
