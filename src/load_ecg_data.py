@@ -1,7 +1,8 @@
 import mne
+import numpy as np
 
 
-def load_ecg_signal(file_path):
+def load_ecg_signal(file_path: str) -> np.ndarray:
     """
     Load ECG signal from an EDF file using the MNE library.
     This function reads the raw EDF file, preloads the data into memory,
