@@ -97,6 +97,16 @@ env/
 pipenv.lock
 poetry.lock
 
+# Jupyter Notebook & Data Science
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# Raw Data (Може да го разкоментираш, ако не искаш да качваш големите медицински файлове в GitHub)
+# data/
+# *.edf
+# *.qrs
+
 # Java
 *.class
 *.jar
